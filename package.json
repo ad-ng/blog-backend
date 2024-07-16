@@ -1,0 +1,20 @@
+{
+  "name": "blog-backend",
+  "version": "1.0.0",
+  "description": "learning node best practices",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon server/index.js"
+  },
+  "author": "NGOGA Adolphe",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.5.1"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.1.4"
+  }
+}
