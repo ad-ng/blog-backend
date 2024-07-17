@@ -3,6 +3,7 @@ const app = express()
 require('dotenv').config()
 const blog_router = require('../server/routes/blog-endpoint')
 const db = require('../server/config/mongo')
+const user_router = require('./routes/user-endpoits')
 
 
 
@@ -11,6 +12,7 @@ app.use(express.json())
 
 // Router
 app.use('/blog/', blog_router)
+app.use('/user/',user_router)
 
 
 // Start server

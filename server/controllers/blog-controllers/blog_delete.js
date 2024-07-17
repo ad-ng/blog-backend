@@ -1,4 +1,4 @@
-const blog_model = require("../model/blog_model");
+const blog_model = require("../../model/blog_model")
 
 async function blog_delete(req,res){
     try {
