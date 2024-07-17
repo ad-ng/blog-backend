@@ -1,20 +1,20 @@
 const { default: mongoose } = require("mongoose");
-const blog_model = require("../model/blog_model");
+const user_model = require("../model/user_model");
 
 
-async function blog_finder(req,res,next){
+async function user_finder(req,res,next){
     
-    let nblog
+    let user
     try {
-        nblog= await blog_model.findById(req.params._id)
-        if(!nblog){
+        user= await user_model.findById(req.params._id)
+        if(!user){
             return res.status(404).json({message:'user not found'})
         }
     } catch (error) {
         res.status(500).json({message:error})
     }
-    res.blog = nblog
+    res.user = user
     next()
 }
 
-module.exports = blog_finder
+module.exports = user_finder

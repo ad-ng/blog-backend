@@ -1,9 +1,9 @@
 const express = require('express')
 const app = express()
 require('dotenv').config()
-const blog_router = require('../server/routes/blog-endpoint')
+const blog_router = require('./routes/blog-routes')
 const db = require('../server/config/mongo')
-const user_router = require('./routes/user-endpoits')
+const user_router = require('./routes/user-routes')
 
 
 

@@ -1,7 +1,5 @@
 const blog_model = require("../../model/blog_model")
 
-blog_model
-
 async function blog_post(req,res){
     const blog = new blog_model({
         title: req.body.title,
